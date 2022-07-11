@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ninja calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <h1>ninja calculator</h1>
+    <h2>(working beta)<br /> <br />
+    UPDATE, float issue is fixed except that result if always displayed as a float even if its a
+//whole number (i.e. 12 + 12 = 24.00). Result is rounded to 2 decimals always</h2>
+    <div id="main">
+      <form onsubmit="return false">
+            <input type="number" step="0.0000001" id="num1" />
+              <select id="selectMath">
+                <option value="add"">Plus</option>
+                <option value="minus">Minus</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select>
+            <input type="number" step="0.0000001" id="num2" />
+            <button type="submit" onclick="myCalc()">Calculate</button>
+        </form>
+        <br>
+        <div id="status">
+        </div>
+        <div id="answer"></div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>

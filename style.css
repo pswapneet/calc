@@ -1,0 +1,28 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  padding-left: 15%;
+}
+
+h1 { 
+  color: green;
+  font-size: 14px;
+}
+
+h2 { 
+  color: grey;
+  font-size: 11px;
+}
+
+div {
+  border-collapse: collapse;
+}
+
+div#status {
+  padding-bottom: 4px;
+}
+
+div#answer {
+  padding-top: 8px;
+  font-size: 24px;
+}
